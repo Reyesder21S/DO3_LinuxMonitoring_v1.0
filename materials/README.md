@@ -2,76 +2,6 @@
 
 Linux basic bash scripting and system research.
 
-The russian version of the task can be found in the repository.
-
-## Contents
-
-1. [Chapter I](#chapter-i) 
-2. [Chapter II](#chapter-ii) \
-    2.1. [Bash](#bash) \
-    2.2. [Shell](#shell)
-3. [Chapter III](#chapter-iii) \
-    3.1. [First effort](#part-1-first-effort)  
-    3.2. [System research](#part-2-system-research)  
-    3.3. [Visual output design for the system research script](#part-3-visual-output-design-for-the-system-research-script)   
-    3.4. [Configuring visual output design for the system research script.](#part-4-configuring-visual-output-design-for-the-system-research-script)  
-    3.5. [File system research](#part-5-file-system-research)    
-4. [Chapter IV](#chapter-iv)
-
-## Chapter I
-
-![linux_monitoring_v1](misc/images/linux_monitoring_v1.png)
-
-Planet Earth, USA, California, nowadays.
-
-John (that's you) was working late as usual to avoid having to drive home in the rush hour traffic.
-You thought you were the only one in the office, until you heard noises coming from the office next door.
-You didn't pay much attention, it could just be a colleague staying late to finish their business.
-Suddenly you heard a scream coming from that very office (your colleague obviously thought he was alone), "Ugh, I am so tired of collecting system information by hand from these computers on Linux. I probably should have learned it better before applying for the job."
-
-You quickly realised that this was your new system administrator, who had been hired just a few weeks before. On the initiative of your colleague Mike, Linux has been installed on several machines in the office.
-That sysadmin is really trying, he's just unlucky to get a job now. \
-"Poor guy," you thought. "I should try to help him, since I have the time!"
-
-You went to Mike's desk and did something bad: looked in his drawer. Luckily, you found exactly what you're looking for: clippings of articles about Bash and Shell. 
-
-## Chapter II
-
-### Bash
-
->Bash is the shell, or command language interpreter, for the GNU operating system.
->
->The name is an acronym for "Bourne-Again SHell", a pun on Stephen Bourne, the author of the direct ancestor of the current Unix shell, sh, which appeared in the Seventh Edition Bell Labs Research version of Unix.
->
->Bash is largely compatible with sh and incorporates useful features from the Korn shell ksh and the C shell csh. It is intended to be a compliant implementation of the IEEE POSIX Shell and Tools portion of the IEEE POSIX specification (IEEE Standard 1003.1). It provides functional improvements over sh for both interactive and programming use.
->
->While the GNU operating system provides other shells, including a version of csh, Bash is the default shell. Like other GNU software, Bash is quite portable. It currently runs on almost every version of Unix and a few other operating systems - independently supported ports exist for MS-DOS, OS/2 and Windows platforms.
-
-### Shell
-
->At its base, a shell is simply a macro processor that executes commands.
->
->A Unix shell is both a command interpreter and a programming language. As a command interpreter, the shell provides the user interface to the rich set of GNU utilities. Files containing commands can be created, and become commands themselves. These new commands have the same status as system commands, allowing users or groups to establish custom environments to automate their common tasks.
->
->Shells may be used interactively or non-interactively. In interactive mode, they accept input typed from the keyboard. When executing non-interactively, shells execute commands read from a file.
->
->A shell allows GNU commands to be executed both synchronously and asynchronously.
->
->While command execution is essential, most of the power (and complexity) of shells comes from the programming languages they contain. Like any high-level language, the shell provides variables, flow control constructs, quoting, and functions.
->
->Shells provide features specifically designed for interactive use, rather than to extend the programming language. These interactive features include job control, command line editing, command history and aliases.
-
-In Mike's drawer, there was a folder labelled "Materials" under the article clippings. When you looked in it, you found several sheets describing the features of bash scripts.
-
-## Chapter III
-
-- The written bash scripts must be in the src folder;
-- For each task you must create a folder with the following name: **0x**, where x is the task number;
-- All scripts must be decomposed and split into several files;
-- The main script file for each task must be named **main.sh**;
-- All scripts should have checks for incorrect input (not all parameters specified, wrong format parameters, etc.);
-- All scripts must be run on a virtual machine *Ubuntu Server 20.04 LTS*.
-
 ## Part 1. First effort
 
 Before you start helping your colleague, you decide to test your knowledge on a very simple program.
@@ -83,8 +13,6 @@ The script outputs the value of the parameter.
 If the parameter is a number, the script must output an invalid input message.
 
 ## Part 2. System research
-
-Now you’re sure that you’re ready to get down to the initial idea. You quickly think of the information about the system you need to output and get to work.
 
 **== Task ==**
 
@@ -214,19 +142,3 @@ etc up to 10
 Script execution time (in seconds) = 1.5
 ```
 
-
-## Chapter IV
-
-Well, now you've done all the work you wanted to do. You had to stay a little longer than usual, but it was worth it.
-You pack up your things and on your way out of the office you look into the room where you heard your colleague earlier.
-
-"Hey, may I come in?" you knocked on the door.
-
-"Yes... just a second. I didn't think there was anyone else here at this hour."
-
-The door opened and, after a brief chat, you handed the inexperienced sysadmin a flash drive containing the scripts.
-You said goodbye and were about to leave when you remembered an important detail.
-
-"Oh, I completely forgot. I'am John by the way. And what's your name?"
-
-"Sebastian."
